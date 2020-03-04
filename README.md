@@ -26,13 +26,6 @@ Containerized routing protocol process (cRPD) is Juniper’s routing protocol pr
  - Docker Engine 18.09.1
 
 
-
-# More details 
-
-https://www.juniper.net/documentation/en_US/crpd/topics/concept/understanding-crpd.html
-
-
-
 # Download the cRPD Software
 
 The cRPD software is available as a cRPD Docker file from the Juniper Internal Docker registry.
@@ -79,8 +72,21 @@ $ docker exec -it crpd01 cli
 root@crpd01>
 ```
 
+To view container processes
+
+```
+docker exec crpd01 ps aux
+```
+
 Stop the existing container
 
 ```
 $ docker stop crpd01
 ```
+
+
+# More details
+
+https://www.juniper.net/documentation/en_US/crpd/topics/concept/understanding-crpd.html
+
+
