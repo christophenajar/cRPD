@@ -65,12 +65,20 @@ Attach the data volumes to create and launch the container to the cRPD instance
 $ docker run --rm --detach --name crpd01 -h crpd01 --net=bridge --privileged -v crpd01-config:/config -v crpd01-varlog:/var/log -m 512MB --memory-swap=512MB  -it crpd:19.4R1.10
 ```
 
-Log in to the cRPD container
+Log in to the cRPD container using CLI
 
 ```
 $ docker exec -it crpd01 cli
 root@crpd01>
 ```
+
+Log in to the cRPD container using CLI
+
+```
+$ docker exec -it crpd01 bash
+root@crpd01:/#
+```
+
 
 To view container processes
 
@@ -83,6 +91,7 @@ Stop the existing container
 ```
 $ docker stop crpd01
 ```
+
 
 
 # More details
