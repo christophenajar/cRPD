@@ -30,3 +30,10 @@ Containerized routing protocol process (cRPD) is Juniper’s routing protocol pr
 # More details 
 
 https://www.juniper.net/documentation/en_US/crpd/topics/concept/understanding-crpd.html
+
+
+# Configuration
+
+Download first from Juniper https://support.juniper.net : 
+
+- **junos-routing-crpd-docker-19.4R1.10.tgz**
